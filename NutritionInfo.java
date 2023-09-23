@@ -8,6 +8,7 @@ public class NutritionInfo
     private double protein;
 
     // Constructor
+
     public NutritionInfo(String name, double fat, double carbs, double protein) {
         this.name = name;
         this.fat = fat;
@@ -83,6 +84,14 @@ public class NutritionInfo
         item1.fat ();
         item1.carbs ();
         item1.protein ();
+
+        public static double getCalories(double numServings) {
+            // Calorie formula
+
+            double numServings = 0;
+            double calories = ((item1.fat * 9) + (item1.carbs * 4) + (item1.protein * 4)) * numServings;
+            return calories;
+        }
 
 
         System.out.println ("Nutritional information per serving of " + item1.getName () + ":");

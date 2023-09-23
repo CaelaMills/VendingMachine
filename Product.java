@@ -1,9 +1,13 @@
-public enum Product {;
-    private String[][][] products;
+public class Product {
+    private final String name;
+    private final double price;
+    private Category category;
+    private final String nutritionalFacts;
 
-
-    public void VendingMachine(int rows, int cols, int depth) {
-        // Declare and dimension a Multi-dimensional array of Strings
-        products = new String[rows][cols][depth];
+    public Product(String name, double price, String nutritionalFacts) {
+        this.name = name;
+        this.price = price;
+        this.category = null;
+        this.nutritionalFacts = nutritionalFacts;
     }
 }
