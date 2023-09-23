@@ -1,13 +1,11 @@
 public class Product {
-    private final String name;
-    private final double price;
+    private String name;
+    private double price;
     private Category category;
-    private final String nutritionalFacts;
 
-    public Product(String name, double price, String nutritionalFacts) {
+    public Product(String name, double price, Category category) {
         this.name = name;
         this.price = price;
-        this.category = null;
-        this.nutritionalFacts = nutritionalFacts;
+        this.category = category;
     }
 }

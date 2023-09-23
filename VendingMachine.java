@@ -50,7 +50,13 @@ import java.util.Arrays;
             VendingMachine vendingMachine = new VendingMachine(6, 6, 6);
 
 
-            // ??
+
+            Product thisSoda = new Product("Pepsi", 2.50, Category.PEPSI);
+            Product thisSoda2 = new Product("Fanta", 1.75, Category.FANTA);
+            Product thisSoda3 = new Product("Coca-Cola", 2.00, Category.COCA_COLA);
+
+
+
             vendingMachine.addProduct(0, 0, 0, "Soda");
             vendingMachine.addProduct(0, 0, 1, "Soda");
             vendingMachine.addProduct(0, 0, 2, "Soda");
